@@ -988,7 +988,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 5.978407
+  orthographic size: 9.48
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -2009,11 +2009,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: -408.17712, y: -33.92491}
+  scrollPos: {x: -384.60327, y: -26.609903}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 400
-  zoom: 1
+  zoom: 0.8200002
   scrollViewRect:
     serializedVersion: 2
     x: -343
@@ -2165,7 +2165,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 242.47751
     y: 75.95201
-    width: 140
+    width: 145.12193
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -2263,7 +2263,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 499.3523
     y: 71.73089
-    width: 139
+    width: 145.12193
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -2424,7 +2424,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 653.2828
     y: 210.88342
-    width: 120
+    width: 120.73169
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -2499,7 +2499,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 482.59747
     y: 308.26822
-    width: 127
+    width: 131.7073
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -2549,7 +2549,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 759.3026
     y: 316.2073
-    width: 121
+    width: 126.829254
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -2819,7 +2819,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 943.9425
     y: 145.28665
-    width: 168
+    width: 176.82924
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -2947,7 +2947,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 935.37115
     y: 239.57231
-    width: 168
+    width: 176.82924
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -3260,7 +3260,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 1490.6737
     y: 137.7421
-    width: 140
+    width: 151.21948
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
