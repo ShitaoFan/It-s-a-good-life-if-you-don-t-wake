@@ -228,7 +228,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61dddfdc5e0e44ca298d8f46f7f5a915, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  selectedFlowchart: {fileID: 367116016}
+  selectedFlowchart: {fileID: 658232710}
 --- !u!4 &38986649
 Transform:
   m_ObjectHideFlags: 1
@@ -1094,7 +1094,6 @@ GameObject:
   - component: {fileID: 658232709}
   - component: {fileID: 658232706}
   - component: {fileID: 658232705}
-  - component: {fileID: 658232704}
   - component: {fileID: 658232716}
   - component: {fileID: 658232714}
   - component: {fileID: 658232713}
@@ -1105,6 +1104,8 @@ GameObject:
   - component: {fileID: 658232715}
   - component: {fileID: 658232718}
   - component: {fileID: 658232719}
+  - component: {fileID: 658232707}
+  - component: {fileID: 658232720}
   m_Layer: 0
   m_Name: Chapter 2
   m_TagString: Untagged
@@ -1126,27 +1127,6 @@ Transform:
   m_Father: {fileID: 5476085}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &658232704
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 658232702}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 437f9a4e3dbc647f9bdce95308418bff, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 14
-  indentLevel: 0
-  duration: 3
-  fadeOut: 1
-  targetView: {fileID: 1326303480}
-  waitUntilFinished: 1
-  fadeColor: {r: 1, g: 1, b: 1, a: 1}
-  fadeTexture: {fileID: 0}
-  targetCamera: {fileID: 0}
 --- !u!114 &658232705
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -1186,6 +1166,20 @@ MonoBehaviour:
   fadeColor: {r: 1, g: 1, b: 1, a: 1}
   fadeTexture: {fileID: 0}
   targetCamera: {fileID: 0}
+--- !u!114 &658232707
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 658232702}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2f6487d21a03404cb21b245f0242e79, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parentBlock: {fileID: 658232709}
+  waitForFrames: 1
 --- !u!114 &658232708
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -1217,7 +1211,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 404.5
+    x: 403.43616
     y: 89.5
     width: 120
     height: 40
@@ -1226,13 +1220,13 @@ MonoBehaviour:
   itemId: 9
   blockName: ZoomOut 3
   description: 
-  eventHandler: {fileID: 0}
+  eventHandler: {fileID: 658232707}
   commandList:
   - {fileID: 658232706}
   - {fileID: 658232718}
   - {fileID: 658232705}
+  - {fileID: 658232720}
   - {fileID: 658232715}
-  - {fileID: 658232704}
 --- !u!114 &658232710
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1257,7 +1251,8 @@ MonoBehaviour:
     y: -340
     width: 1114
     height: 859
-  selectedBlocks: []
+  selectedBlocks:
+  - {fileID: 658232709}
   selectedCommands: []
   variables:
   - {fileID: 658232712}
@@ -1423,8 +1418,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 637.82996
-    y: 97.70782
+    x: 706.97894
+    y: 93.4525
     width: 120
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
@@ -1436,8 +1431,8 @@ MonoBehaviour:
   commandList:
   - {fileID: 658232708}
   - {fileID: 658232714}
-  - {fileID: 658232719}
   - {fileID: 658232711}
+  - {fileID: 658232719}
   - {fileID: 658232713}
 --- !u!114 &658232717
 MonoBehaviour:
@@ -1453,7 +1448,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   parentBlock: {fileID: 658232716}
   keyPressType: 0
-  keyCode: 0
+  keyCode: 13
 --- !u!114 &658232718
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -1492,6 +1487,27 @@ MonoBehaviour:
   targetView: {fileID: 2074582761}
   waitUntilFinished: 1
   targetCamera: {fileID: 0}
+--- !u!114 &658232720
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 658232702}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dbd8c931f22994b9d90e2037fffaa770, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 24
+  indentLevel: 0
+  _targetGameObject:
+    gameObjectRef: {fileID: 0}
+    gameObjectVal: {fileID: 2062436711}
+  activeState:
+    booleanRef: {fileID: 0}
+    booleanVal: 1
+  targetGameObjectOLD: {fileID: 0}
 --- !u!1 &664574932
 GameObject:
   m_ObjectHideFlags: 0
@@ -3021,7 +3037,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 217.68312, y: -32.796513}
+  scrollPos: {x: 215.05153, y: 2.729792}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 400
@@ -3033,9 +3049,8 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 1474083003}
-  selectedCommands:
-  - {fileID: 1474082995}
+  - {fileID: 1474082987}
+  selectedCommands: []
   variables: []
   description: 
   stepPause: 0
@@ -3301,7 +3316,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 584.859
     y: 113.4835
-    width: 142.63156
+    width: 134.21051
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -3404,7 +3419,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 792
     y: 84
-    width: 152.10522
+    width: 140.78944
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -4175,7 +4190,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &2062436712
 RectTransform:
   m_ObjectHideFlags: 0
