@@ -421,6 +421,8 @@ GameObject:
   - component: {fileID: 367116015}
   - component: {fileID: 367116023}
   - component: {fileID: 367116022}
+  - component: {fileID: 367116024}
+  - component: {fileID: 367116025}
   m_Layer: 0
   m_Name: Chapter 7
   m_TagString: Untagged
@@ -484,7 +486,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 29.160097, y: -0.11221838}
+  scrollPos: {x: 54.933315, y: -44.44211}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 400
@@ -495,8 +497,7 @@ MonoBehaviour:
     y: -340
     width: 1114
     height: 859
-  selectedBlocks:
-  - {fileID: 367116023}
+  selectedBlocks: []
   selectedCommands: []
   variables: []
   description: 
@@ -627,7 +628,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   parentBlock: {fileID: 367116023}
   draggableObject: {fileID: 861511466}
-  targetObject: {fileID: 0}
+  targetObject: {fileID: 480131072}
 --- !u!114 &367116023
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -642,9 +643,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 443.00485
-    y: 43.411186
-    width: 141.54639
+    x: 401.7682
+    y: 64.02978
+    width: 158.86597
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -652,7 +653,51 @@ MonoBehaviour:
   blockName: DismissText
   description: 
   eventHandler: {fileID: 367116022}
-  commandList: []
+  commandList:
+  - {fileID: 367116024}
+  - {fileID: 367116025}
+--- !u!114 &367116024
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 367116013}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dbd8c931f22994b9d90e2037fffaa770, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 7
+  indentLevel: 0
+  _targetGameObject:
+    gameObjectRef: {fileID: 0}
+    gameObjectVal: {fileID: 861511464}
+  activeState:
+    booleanRef: {fileID: 0}
+    booleanVal: 0
+  targetGameObjectOLD: {fileID: 0}
+--- !u!114 &367116025
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 367116013}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 050fb9e6e72f442b3b883da8a965bdeb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 15
+  indentLevel: 0
+  targetFlowchart: {fileID: 367116016}
+  targetBlock: {fileID: 0}
+  startLabel:
+    stringRef: {fileID: 0}
+    stringVal: 
+  startIndex: 0
+  callMode: 0
 --- !u!1 &369632781
 GameObject:
   m_ObjectHideFlags: 0
@@ -747,26 +792,39 @@ GameObject:
   - component: {fileID: 480131074}
   - component: {fileID: 480131073}
   - component: {fileID: 480131072}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: DismissArea
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!65 &480131072
-BoxCollider:
+--- !u!61 &480131072
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 480131071}
+  m_Enabled: 1
+  m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -6.1883125, y: -1.1540174}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 12.1562, y: 17.956919, z: 0.20000006}
-  m_Center: {x: -4.5780993, y: -1.1505518, z: 0}
+  m_Size: {x: 4.7105885, y: 18.279701}
+  m_EdgeRadius: 0
 --- !u!212 &480131073
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -805,7 +863,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: ea8f56c43254d41728f5ac4e8299b6c9, type: 3}
+  m_Sprite: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -813,7 +871,7 @@ SpriteRenderer:
   m_Size: {x: 1, y: 1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &480131074
