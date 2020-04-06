@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 94f40350633a58e428f7c5e541a06c1f
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - DarkMap: {instanceID: 0}
+  - BlurredMap: {instanceID: 0}
+  - BackgroundMap: {instanceID: 0}
+  - DarkTile: {fileID: 11400000, guid: 43a46e7d43c297048b639b84461b9d15, type: 2}
+  - BlurredTile: {fileID: 11400000, guid: f81c9abbc377bda4ea96006a54467d3e, type: 2}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
